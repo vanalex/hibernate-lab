@@ -24,6 +24,10 @@ public class Author implements Serializable {
             mappedBy = "author", orphanRemoval = true)
     private List<Book> books = new ArrayList<>();
 
+    @OneToMany(cascade = CascadeType.ALL,
+            mappedBy = "author", orphanRemoval = true)
+    private List<Publisher> publishers = new ArrayList<>();
+
     public void addBook(Book book) {
         this.books.add(book);
         book.setAuthor(this);
@@ -88,6 +92,14 @@ public class Author implements Serializable {
 
     public void setBooks(List<Book> books) {
         this.books = books;
+    }
+
+    public List<Publisher> getPublishers() {
+        return publishers;
+    }
+
+    public void setPublishers(List<Publisher> publishers) {
+        this.publishers = publishers;
     }
 
     @Override

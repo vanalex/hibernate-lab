@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example</groupId>
   <artifactId>hibernate-examples</artifactId>
@@ -11,7 +12,6 @@
   <properties>
     <jaxb.version>2.3.2</jaxb.version>
   </properties>
-
   <dependencies>
     <dependency>
       <groupId>com.h2database</groupId>
@@ -48,5 +48,6 @@
     <module>one-to-one</module>
     <module>one-to-one-bidirectional-mapsId</module>
     <module>one-to-many</module>
+    <module>common</module>
   </modules>
 </project>
